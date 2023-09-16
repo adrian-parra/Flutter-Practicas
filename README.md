@@ -37,4 +37,4 @@ La Práctica 3 es una aplicación donde se aprende a utilizar Rutas,DropdownButt
 
 La Práctica 4 es una aplicación donde se aprende a crear un splash screen y agregarle icono personalizado a la aplicación.
 
-[Enlace a la documentación completa de la Práctica 3](practica_04/README.md)
+[Enlace a la documentación completa de la Práctica 4](practica_04/README.md)
