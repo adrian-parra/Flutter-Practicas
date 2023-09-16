@@ -1,16 +1,14 @@
-# practica_04
+# practica 04
 
-A new Flutter project.
+## Aprendizaje
 
-## Getting Started
+- Splash screen creación
+- Icono de la app ,creación de icono para la app
 
-This project is a starting point for a Flutter application.
+## Resultado Final de la practica
 
-A few resources to get you started if this is your first Flutter project:
+splash_screen.dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Pantalla 1](https://github.com/adrian-parra/Flutter-Practicas/blob/main/practica_04/assets/page1.png?raw=true)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
