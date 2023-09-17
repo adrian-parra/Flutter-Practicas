@@ -10,6 +10,7 @@ Este repositorio contiene una serie de prácticas que he creado en Flutter para 
 - [Práctica 2: ](#práctica-2)
 - [Práctica 3: ](#práctica-3)
 - [Práctica 4: ](#práctica-4)
+- [Script conectar dispositivo por adb: ](#conectar-dispositivo-adb)
 
 ## Introducción
 
@@ -38,3 +39,11 @@ La Práctica 3 es una aplicación donde se aprende a utilizar Rutas,DropdownButt
 La Práctica 4 es una aplicación donde se aprende a crear un splash screen y agregarle icono personalizado a la aplicación.
 
 [Enlace a la documentación completa de la Práctica 4](practica_04/README.md)
+
+## conectar dispositivo adb:
+
+Este script de Bash está diseñado para automatizar la configuración y conexión de dispositivos Android a través de ADB (Android Debug Bridge) en modo TCP/IP. Puede ser útil cuando necesitas conectar tu dispositivo Android de forma inalámbrica a través de ADB.
+
+[Enlace a la documentación completa del script](scripts/mac/conectar_dispositivo_adb/README.md)
+
+
