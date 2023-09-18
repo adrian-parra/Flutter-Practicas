@@ -8,10 +8,13 @@
 - `map` ,es una estructura de datos que almacena una colección de elementos, cada uno de los cuales tiene una clave única asociada a él. 
 
 ## Resultado Final del mini proyecto
+
 imc_calculator_screen.ts
+
 ![Pantalla 1](https://github.com/adrian-parra/Flutter-Practicas/blob/main/mini_proyecto_01/assets/page1.png?raw=true)
 
 imc_resultado.ts
+
 ![Pantalla 2](https://github.com/adrian-parra/Flutter-Practicas/blob/main/mini_proyecto_01/assets/page2.png?raw=true)
 
 splash_screen.dart
