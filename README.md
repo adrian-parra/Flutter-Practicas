@@ -11,6 +11,7 @@ Este repositorio contiene una serie de prácticas que he creado en Flutter para 
 - [Práctica 3: ](#práctica-3)
 - [Práctica 4: ](#práctica-4)
 - [Script conectar dispositivo por adb: ](#conectar-dispositivo-adb)
+- [Mini proyecto 01: Calcular IMC](#mini-proyecto-01-calcular-imc)
 
 ## Introducción
 
@@ -45,5 +46,11 @@ La Práctica 4 es una aplicación donde se aprende a crear un splash screen y ag
 Este script de Bash está diseñado para automatizar la configuración y conexión de dispositivos Android a través de ADB (Android Debug Bridge) en modo TCP/IP. Puede ser útil cuando necesitas conectar tu dispositivo Android de forma inalámbrica a través de ADB.
 
 [Enlace a la documentación completa del script](scripts/mac/conectar_dispositivo_adb/README.md)
+
+## Mini proyecto 01: Calcular IMC
+
+En este proyecto el objetivo es calcular el Índice de Masa Corporal (IMC) de un usuario y mostrar su categoría de peso.
+
+[Enlace a la documentación completa del mini proyecto 01](mini_proyecto_01/README.md)
 
 
