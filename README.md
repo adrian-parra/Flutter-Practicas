@@ -12,6 +12,7 @@ Este repositorio contiene una serie de prácticas que he creado en Flutter para 
 - [Práctica 4: ](#práctica-4)
 - [Script conectar dispositivo por adb: ](#conectar-dispositivo-adb)
 - [Mini proyecto 01: Calcular IMC](#mini-proyecto-01-calcular-imc)
+- [Práctica 5: ](#práctica-5)
 
 ## Introducción
 
@@ -52,5 +53,11 @@ Este script de Bash está diseñado para automatizar la configuración y conexi�
 En este proyecto el objetivo es calcular el Índice de Masa Corporal (IMC) de un usuario y mostrar su categoría de peso.
 
 [Enlace a la documentación completa del mini proyecto 01](mini_proyecto_01/README.md)
+
+## Práctica 5:
+
+La Práctica 5 es una aplicación donde se aprende a crear un slider y el uso de container.
+
+[Enlace a la documentación completa de la Práctica 5](practica_05/README.md)
 
 
