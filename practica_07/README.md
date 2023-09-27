@@ -1,16 +1,14 @@
-# practica_07
+# Practica 07
 
-A new Flutter project.
+## Aprendizaje
 
-## Getting Started
+ - `BottomNavigationBar` es un widget que se utiliza comúnmente para crear una barra de navegación en la parte inferior de la pantalla en aplicaciones móviles. Esta barra de navegación suele contener iconos o etiquetas que permiten al usuario cambiar entre diferentes vistas o secciones de la aplicación con solo tocar un ítem en la barra. 
+ - El `BottomNavigationBar` en Flutter se configura con una lista de `BottomNavigationBarItem`, donde cada ítem contiene un icono y una etiqueta. Cuando el usuario toca uno de los ítems en la barra de navegación, se puede cambiar la vista o realizar una acción relacionada con ese ítem.
 
-This project is a starting point for a Flutter application.
+## Resultado final de la practica
 
-A few resources to get you started if this is your first Flutter project:
+bottom_screen.dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Pantalla 1](https://github.com/adrian-parra/Flutter-Practicas/blob/main/practica_07/assets/page1.png?raw=true)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
