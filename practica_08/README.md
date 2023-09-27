@@ -1,16 +1,16 @@
-# practica_08
+# Practica 08
 
-A new Flutter project.
+## Aprendizaje
 
-## Getting Started
+ - `Drawer` es un componente de interfaz de usuario que se utiliza para proporcionar un menú de navegación oculto o una lista de opciones accesibles mediante un gesto de deslizamiento lateral. Se ubica generalmente en el lateral izquierdo o derecho de la pantalla y se oculta cuando no está en uso. Los usuarios pueden acceder al Drawer deslizando el dedo desde el borde de la pantalla o tocando un ícono o botón específico, como un ícono de hamburguesa o un botón de menú.
 
-This project is a starting point for a Flutter application.
+## Resultado final de la practica
 
-A few resources to get you started if this is your first Flutter project:
+home_screen.dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Pantalla 1](https://github.com/adrian-parra/Flutter-Practicas/blob/main/practica_08/assets/pagina1.png?raw=true)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+drawer-widget.dart
+
+![Pantalla 2](https://github.com/adrian-parra/Flutter-Practicas/blob/main/practica_08/assets/pagina2.png?raw=true)
+
