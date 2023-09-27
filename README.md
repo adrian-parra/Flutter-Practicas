@@ -12,8 +12,10 @@ Este repositorio contiene una serie de prácticas que he creado en Flutter para 
 - [Práctica 4 ](#práctica-4)
 - [Script conectar dispositivo por adb: ](#conectar-dispositivo-adb)
 - [Mini proyecto 01: Calcular IMC](#mini-proyecto-01-calcular-imc)
-- [Práctica 5 ](#práctica-5)
-- [Práctica 6 ](#práctica-6)
+- [Práctica 5: Slider ](#práctica-5)
+- [Práctica 6: TabBar ](#práctica-6)
+- [Práctica 7: BottomNavigatorBar ](#práctica-7)
+
 
 ## Introducción
 
@@ -66,5 +68,11 @@ La Práctica 5 es una aplicación donde se aprende a crear un slider y el uso de
 La Práctica 6 es una aplicación donde se aprende a crear un TabBar.
 
 [Enlace a la documentación completa de la Práctica 6](practica_06/README.md)
+
+## Práctica 7
+
+La Práctica 7 es una aplicación donde se aprende a crear un BottomNavigatorBar con BottomNavigatorBarItem.
+
+[Enlace a la documentación completa de la Práctica 7](practica_07/README.md)
 
 
