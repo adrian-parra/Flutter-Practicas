@@ -16,6 +16,7 @@ Este repositorio contiene una serie de prácticas que he creado en Flutter para 
 - [Práctica 6: TabBar ](#práctica-6)
 - [Práctica 7: BottomNavigatorBar ](#práctica-7)
 - [Práctica 8: Drawer ](#práctica-8)
+- [Práctica 9: ListView ](#práctica-9)
 
 
 ## Introducción
@@ -78,8 +79,14 @@ La Práctica 7 es una aplicación donde se aprende a crear un BottomNavigatorBar
 
 ## Práctica 8
 
-La Práctica 8 es una aplicación donde se aprende a crear un Drawer.
+La Práctica 8 es una aplicación donde se aprende a crear un Drawer.j
 
 [Enlace a la documentación completa de la Práctica 8](practica_08/README.md)
+
+## Práctica 9
+
+La Práctica 9 es una aplicación donde se aprende a crear un ListView junco con ListTile
+
+[Enlace a la documentación completa de la Práctica 9](practica_09/README.md)
 
 
