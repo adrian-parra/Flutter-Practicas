@@ -1,16 +1,15 @@
-# practica_09
+# Practica 09
 
-A new Flutter project.
+## Aprendizaje
 
-## Getting Started
+ - `ListView` es un widget que se utiliza para crear una lista desplazable de elementos. Puedes pensar en él como la versión de Flutter de una lista o "scrollable view." `ListView` es ampliamente utilizado para mostrar una lista de elementos, como texto, imágenes, u otros widgets, en una pantalla y permitir al usuario desplazarse a través de ellos si la lista es más larga que la pantalla.
+ - `ListTile` es un widget que se utiliza comúnmente para representar un elemento en una lista o en una estructura de lista. Proporciona una forma conveniente de mostrar contenido en una estructura de lista, como un título, un subtítulo y opcionalmente iconos, avatares y otros elementos.
 
-This project is a starting point for a Flutter application.
+## Resultado final de la practica
 
-A few resources to get you started if this is your first Flutter project:
+listview_screen.dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Pantalla 1](https://github.com/adrian-parra/Flutter-Practicas/blob/main/practica_09/assets/pagina1.png?raw=true)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
