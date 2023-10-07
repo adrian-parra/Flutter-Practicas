@@ -1,16 +1,15 @@
-# practica_10
+# Practica 10
 
-A new Flutter project.
+## Aprendizaje
 
-## Getting Started
+ - `ListView.builder` es un widget en Flutter que se utiliza para crear una lista desplazable de elementos de manera eficiente y dinámica. Este widget es especialmente útil cuando necesitas mostrar una lista larga de elementos, como elementos de una lista de contactos, publicaciones en redes sociales o elementos de una lista de productos, ya que permite cargar solo los elementos que son visibles en la pantalla en lugar de cargar todos los elementos de la lista de una vez.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Resultado final de la practica
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+listview_screen.dart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Pantalla 1](https://github.com/adrian-parra/Flutter-Practicas/blob/main/practica_10/assets/pagina1.png?raw=true)
+
+
+
