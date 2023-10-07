@@ -1,16 +1,17 @@
-# practica_11
+# Practica 11
 
-A new Flutter project.
+## Aprendizaje
 
-## Getting Started
+ - `SharedPreferences` es una API utilizada en Flutter y otros frameworks de desarrollo de aplicaciones móviles para almacenar datos de forma persistente en el dispositivo del usuario. Esta API se utiliza comúnmente para almacenar configuraciones de la aplicación, preferencias del usuario y otros datos que deben persistir incluso después de que la aplicación se cierre y se reinicie.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Resultado final de la practica
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+shared_screen.dart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Pantalla 1](https://github.com/adrian-parra/Flutter-Practicas/blob/main/practica_11/assets/pagina1.png?raw=true)
+
+![Pantalla 2](https://github.com/adrian-parra/Flutter-Practicas/blob/main/practica_11/assets/pagina2.png?raw=true)
+
+
+
