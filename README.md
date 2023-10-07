@@ -18,6 +18,7 @@ Este repositorio contiene una serie de prácticas que he creado en Flutter para 
 - [Práctica 8: Drawer ](#práctica-8)
 - [Práctica 9: ListView ](#práctica-9)
 - [Práctica 10: ListView.builder ](#práctica-10)
+- [Práctica 11: SharedPreferences ](#práctica-11)
 
 
 
@@ -96,5 +97,11 @@ La Práctica 9 es una aplicación donde se aprende a crear un ListView junco con
 La Práctica 10 es una aplicación donde se aprende a usar listview.builder
 
 [Enlace a la documentación completa de la Práctica 10](practica_10/README.md)
+
+## Práctica 11
+
+La Práctica 11 es una aplicación donde se aprende a usar SharedPreferences
+
+[Enlace a la documentación completa de la Práctica 11](practica_11/README.md)
 
 
