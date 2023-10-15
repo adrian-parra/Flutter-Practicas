@@ -119,6 +119,6 @@ Es una aplicación donde se aprende a consumir un JSON local y mostrar los datos
 Es una aplicación donde se aprende a crear un CRUD
 con el uso de SQLite
 
-[Enlace a la documentación completa de la Práctica 12](practica_14/README.md)
+[Enlace a la documentación completa de la Práctica 14](practica_14/README.md)
 
 
