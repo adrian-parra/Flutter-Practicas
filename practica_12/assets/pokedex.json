@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Pikachu",
+    "type": "Electric",
+    "height": "0.4 m",
+    "weight": "6 kg",
+    "abilities": ["Static"],
+    "base_experience": 112,
+    "moves": ["Quick Attack", "Thunder Shock", "Iron Tail", "Thunderbolt"]
+  },
+  {
+    "name": "Bulbasaur",
+    "type": "Grass/Poison",
+    "height": "0.7 m",
+    "weight": "6.9 kg",
+    "abilities": ["Overgrow"],
+    "base_experience": 64,
+    "moves": ["Tackle", "Vine Whip", "Seed Bomb", "Razor Leaf"]
+  },
+  {
+    "name": "Charizard",
+    "type": "Fire/Flying",
+    "height": "1.7 m",
+    "weight": "90.5 kg",
+    "abilities": ["Blaze"],
+    "base_experience": 240,
+    "moves": ["Flamethrower", "Dragon Claw", "Air Slash", "Fire Spin"]
+  },
+  {
+    "name": "Squirtle",
+    "type": "Water",
+    "height": "0.5 m",
+    "weight": "9 kg",
+    "abilities": ["Torrent"],
+    "base_experience": 63,
+    "moves": ["Tackle", "Water Gun", "Hydro Pump", "Aqua Tail"]
+  },
+  {
+    "name": "Jigglypuff",
+    "type": "Normal/Fairy",
+    "height": "0.5 m",
+    "weight": "5.5 kg",
+    "abilities": ["Cute Charm"],
+    "base_experience": 95,
+    "moves": ["Sing", "Doubleslap", "Body Slam", "Rollout"]
+  },
+  {
+    "name": "Machop",
+    "type": "Fighting",
+    "height": "0.8 m",
+    "weight": "19.5 kg",
+    "abilities": ["Guts"],
+    "base_experience": 61,
+    "moves": ["Karate Chop", "Low Kick", "Seismic Toss", "Cross Chop"]
+  },
+  {
+    "name": "Eevee",
+    "type": "Normal",
+    "height": "0.3 m",
+    "weight": "6.5 kg",
+    "abilities": ["Run Away"],
+    "base_experience": 65,
+    "moves": ["Tackle", "Quick Attack", "Bite", "Last Resort"]
+  },
+  {
+    "name": "Gengar",
+    "type": "Ghost/Poison",
+    "height": "1.5 m",
+    "weight": "40.5 kg",
+    "abilities": ["Levitate"],
+    "base_experience": 225,
+    "moves": ["Shadow Ball", "Sludge Bomb", "Hypnosis", "Dream Eater"]
+  },
+  {
+    "name": "Mewtwo",
+    "type": "Psychic",
+    "height": "2 m",
+    "weight": "122 kg",
+    "abilities": ["Pressure"],
+    "base_experience": 306,
+    "moves": ["Psychic", "Aura Sphere", "Barrier", "Psystrike"]
+  },
+  {
+    "name": "Gyarados",
+    "type": "Water/Flying",
+    "height": "6.5 m",
+    "weight": "235 kg",
+    "abilities": ["Intimidate"],
+    "base_experience": 189,
+    "moves": ["Dragon Rage", "Hydro Pump", "Twister", "Hyper Beam"]
+  }
+]
