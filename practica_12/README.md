@@ -1,16 +1,28 @@
-# practica_12
+# Practica 12
 
-A new Flutter project.
+## Aprendizaje
+Carga de datos de un JSON local en un listview.
 
-## Getting Started
+ `FutureBuilder` es un widget en Flutter que se utiliza para trabajar con futuros y manejar la construcción de la interfaz de usuario en función del estado de un futuro. Los futuros representan valores que pueden no estar disponibles de inmediato, como datos que se obtienen de una solicitud HTTP, una operación asincrónica u otras tareas que pueden llevar tiempo en completarse.
 
-This project is a starting point for a Flutter application.
+ FutureBuilder permite construir la interfaz de usuario en función de los siguientes estados de un futuro:
 
-A few resources to get you started if this is your first Flutter project:
+ 1. `ConnectionState.none`: Indica que el futuro aún no ha sido creado o no está disponible.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+ 2. `ConnectionState.waiting`: Indica que el futuro está en proceso y se está esperando su resultado.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ 3. `ConnectionState.active`: Indica que el futuro se encuentra en un estado intermedio. Esto es menos común de ver.
+
+ 4. `ConnectionState.done`: Indica que el futuro ha sido completado y su resultado está disponible.
+
+
+
+## Resultado final de la practica
+
+view.dart
+
+![Pantalla 1](https://github.com/adrian-parra/Flutter-Practicas/blob/main/practica_12/assets/pagina1.png?raw=true)
+
+
+
+
