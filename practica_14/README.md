@@ -1,16 +1,20 @@
-# practica_14
+# Practica 14
 
-A new Flutter project.
+## Aprendizaje
+- `SQFlite`: es un paquete de Flutter que proporciona una interfaz para trabajar con bases de datos `SQLite` en aplicaciones Flutter.
 
-## Getting Started
+- `SQLite`: es un sistema de gestión de bases de datos relacionales (RDBMS por sus siglas en inglés) que es extremadamente ligero y de código abierto. A diferencia de otros sistemas de gestión de bases de datos, SQLite es una biblioteca que se incorpora directamente en una aplicación en lugar de ser un proceso independiente o un servidor de bases de datos.
 
-This project is a starting point for a Flutter application.
+- `CREATE CRUD` usando `SQLite` como DB
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Resultado final de la practica
+
+crud_screen.dart
+
+![Pantalla 1](https://github.com/adrian-parra/Flutter-Practicas/blob/main/practica_14/assets/pagina1.png?raw=true)
+
+
+
+
