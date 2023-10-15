@@ -20,6 +20,8 @@ Este repositorio contiene una serie de prácticas que he creado en Flutter para 
 - [Práctica 10: ListView.builder ](#práctica-10)
 - [Práctica 11: SharedPreferences ](#práctica-11)
 - [Práctica 12: JSON en ListView ](#práctica-12)
+- [Práctica 14: SQLite ](#práctica-14)
+
 
 
 
@@ -111,5 +113,12 @@ Es una aplicación donde se aprende a usar SharedPreferences
 Es una aplicación donde se aprende a consumir un JSON local y mostrar los datos en un listview
 
 [Enlace a la documentación completa de la Práctica 12](practica_12/README.md)
+
+## Práctica 14
+
+Es una aplicación donde se aprende a crear un CRUD
+con el uso de SQLite
+
+[Enlace a la documentación completa de la Práctica 12](practica_14/README.md)
 
 
