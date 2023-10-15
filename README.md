@@ -19,6 +19,8 @@ Este repositorio contiene una serie de prácticas que he creado en Flutter para 
 - [Práctica 9: ListView ](#práctica-9)
 - [Práctica 10: ListView.builder ](#práctica-10)
 - [Práctica 11: SharedPreferences ](#práctica-11)
+- [Práctica 12: JSON en ListView ](#práctica-12)
+
 
 
 
@@ -34,19 +36,19 @@ Esta es la primera práctica que he creado. Se trata del famoso hello world
 
 ## Práctica 2
 
-La Práctica 2 es una aplicación donde se aprende a utilizar Image desde Assets,TextField,Alert Dialog,ElevatedButton.
+Es una aplicación donde se aprende a utilizar Image desde Assets,TextField,Alert Dialog,ElevatedButton.
 
 [Enlace a la documentación completa de la Práctica 2]()
 
 ## Práctica 3
 
-La Práctica 3 es una aplicación donde se aprende a utilizar Rutas,DropdownButton,Intercambio de Datos.
+Es una aplicación donde se aprende a utilizar Rutas,DropdownButton,Intercambio de Datos.
 
 [Enlace a la documentación completa de la Práctica 3](practica_03/README.md)
 
 ## Práctica 4
 
-La Práctica 4 es una aplicación donde se aprende a crear un splash screen y agregarle icono personalizado a la aplicación.
+Es una aplicación donde se aprende a crear un splash screen y agregarle icono personalizado a la aplicación.
 
 [Enlace a la documentación completa de la Práctica 4](practica_04/README.md)
 
@@ -64,44 +66,50 @@ En este proyecto el objetivo es calcular el Índice de Masa Corporal (IMC) de un
 
 ## Práctica 5
 
-La Práctica 5 es una aplicación donde se aprende a crear un slider y el uso de container.
+Es una aplicación donde se aprende a crear un slider y el uso de container.
 
 [Enlace a la documentación completa de la Práctica 5](practica_05/README.md)
 
 ## Práctica 6
 
-La Práctica 6 es una aplicación donde se aprende a crear un TabBar.
+Es una aplicación donde se aprende a crear un TabBar.
 
 [Enlace a la documentación completa de la Práctica 6](practica_06/README.md)
 
 ## Práctica 7
 
-La Práctica 7 es una aplicación donde se aprende a crear un BottomNavigatorBar con BottomNavigatorBarItem.
+Es una aplicación donde se aprende a crear un BottomNavigatorBar con BottomNavigatorBarItem.
 
 [Enlace a la documentación completa de la Práctica 7](practica_07/README.md)
 
 ## Práctica 8
 
-La Práctica 8 es una aplicación donde se aprende a crear un Drawer.j
+Es una aplicación donde se aprende a crear un Drawer.j
 
 [Enlace a la documentación completa de la Práctica 8](practica_08/README.md)
 
 ## Práctica 9
 
-La Práctica 9 es una aplicación donde se aprende a crear un ListView junco con ListTile
+Es una aplicación donde se aprende a crear un ListView junco con ListTile
 
 [Enlace a la documentación completa de la Práctica 9](practica_09/README.md)
 
 ## Práctica 10
 
-La Práctica 10 es una aplicación donde se aprende a usar listview.builder
+Es una aplicación donde se aprende a usar listview.builder
 
 [Enlace a la documentación completa de la Práctica 10](practica_10/README.md)
 
 ## Práctica 11
 
-La Práctica 11 es una aplicación donde se aprende a usar SharedPreferences
+Es una aplicación donde se aprende a usar SharedPreferences
 
 [Enlace a la documentación completa de la Práctica 11](practica_11/README.md)
+
+## Práctica 12
+
+Es una aplicación donde se aprende a consumir un JSON local y mostrar los datos en un listview
+
+[Enlace a la documentación completa de la Práctica 12](practica_12/README.md)
 
 
