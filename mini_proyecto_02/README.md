@@ -5,20 +5,20 @@ Juego `MEMORAMA`
 Se aplicaron conocimientos previamente adquiridos
 
 ## Conocimientos
-- Splash screen
-- Shared preferences
-- SQLite
-- Widgets custom
-- SeState() para cambios de estado
+- `Splash screen`
+- `Shared preferences`
+- `SQLite`
+- `Widgets custom`
+- `SetState()` para cambios de estado
 
 
-## Resultado final de la practica
+## Resultado final del mini proyecto
+
+Video:
+
+[![Video Tutorial](https://img.youtube.com/vi/ml58zVQClIw/0.jpg)](https://www.youtube.com/watch?v=ml58zVQClIw)
 
 
-<video controls>
-  <source src="tutorial.mp4" type="video/mp4">
-  Tu navegador no soporta la reproducción de videos.
-</video>
 
 
 
