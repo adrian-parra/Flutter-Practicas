@@ -1,16 +1,26 @@
-# mini_proyecto_02
+# Mini Proyecto 02
 
-A new Flutter project.
+Juego `MEMORAMA`
 
-## Getting Started
+Se aplicaron conocimientos previamente adquiridos
 
-This project is a starting point for a Flutter application.
+## Conocimientos
+- Splash screen
+- Shared preferences
+- SQLite
+- Widgets custom
+- SeState() para cambios de estado
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Resultado final de la practica
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+<video controls>
+  <source src="tutorial.mp4" type="video/mp4">
+  Tu navegador no soporta la reproducción de videos.
+</video>
+
+
+
+
+
