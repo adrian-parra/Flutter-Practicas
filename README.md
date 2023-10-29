@@ -22,6 +22,7 @@ Este repositorio contiene una serie de prácticas que he creado en Flutter para 
 - [Práctica 12: JSON en ListView ](#práctica-12)
 - [Práctica 14: SQLite ](#práctica-14)
 - [Mini proyecto 02: Juego MEMORAMA ](#mini-proyecto-02-juego-memorama)
+- [Práctica 15: Sliver](#práctica-15)
 
 
 
@@ -128,5 +129,12 @@ con el uso de SQLite
 En este proyecto el objetivo es crear un juego donde se debe encontrar todos los pares de cartas idénticas en un conjunto de cartas boca abajo.
 
 [Enlace a la documentación completa del mini proyecto 02](mini_proyecto_02/README.md)
+
+## Práctica 15
+
+Es una aplicación donde se aprende a crear Sliver
+
+
+[Enlace a la documentación completa de la Práctica 15](practica_15/README.md)
 
 
