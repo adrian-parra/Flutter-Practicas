@@ -23,6 +23,8 @@ Este repositorio contiene una serie de prácticas que he creado en Flutter para 
 - [Práctica 14: SQLite ](#práctica-14)
 - [Mini proyecto 02: Juego MEMORAMA ](#mini-proyecto-02-juego-memorama)
 - [Práctica 15: Sliver](#práctica-15)
+- [Práctica 16: Animated](#práctica-16)
+
 
 
 
@@ -136,5 +138,12 @@ Es una aplicación donde se aprende a crear Sliver
 
 
 [Enlace a la documentación completa de la Práctica 15](practica_15/README.md)
+
+## Práctica 16
+
+Es una aplicación donde se aprende a crear Animaciones
+
+
+[Enlace a la documentación completa de la Práctica 16](practica_16/README.md)
 
 
