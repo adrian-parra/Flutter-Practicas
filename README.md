@@ -25,6 +25,8 @@ Este repositorio contiene una serie de prácticas que he creado en Flutter para 
 - [Práctica 15: Sliver](#práctica-15)
 - [Práctica 16: Animated](#práctica-16)
 - [Práctica 17: Slidable](#práctica-17)
+- [Práctica 18: Table,Orientación: Portrait](#práctica-18)
+
 
 
 
@@ -153,5 +155,12 @@ Es una aplicación donde se aprende a crear slidable y alert con snackbar
 
 
 [Enlace a la documentación completa de la Práctica 17](practica_17/README.md)
+
+## Práctica 18
+
+Es una aplicación donde se aprende a crear tablas y el manejo Orientación: Portrait
+
+
+[Enlace a la documentación completa de la Práctica 18](practica_18/README.md)
 
 
