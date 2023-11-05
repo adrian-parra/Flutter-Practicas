@@ -1,16 +1,22 @@
-# practica_17
+# Practica 17
 
-A new Flutter project.
+## Aprendizaje
 
-## Getting Started
+ `Slideable` es un widget que te permite crear deslizadores o controles deslizantes interactivos en tu interfaz de usuario. Estos deslizadores se utilizan comúnmente para acciones que se pueden realizar deslizando un elemento de la interfaz de usuario hacia la izquierda o hacia la derecha, como eliminar un elemento de una lista o activar acciones contextuales en un elemento.
 
-This project is a starting point for a Flutter application.
+`SnackBar` es un mensaje corto que se muestra en la parte inferior de la pantalla para proporcionar información o notificaciones temporales al usuario. Los SnackBars suelen utilizarse para informar al usuario sobre acciones realizadas en la aplicación, como confirmaciones de operaciones, advertencias o mensajes de estado.
 
-A few resources to get you started if this is your first Flutter project:
+## Resultado final de la practica
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+listview_screen.dart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Pantalla 1](https://github.com/adrian-parra/Flutter-Practicas/blob/main/practica_17/assets/pagina1.png?raw=true)
+
+listview_screen.dart
+
+![Pantalla 2](https://github.com/adrian-parra/Flutter-Practicas/blob/main/practica_17/assets/pagina2.png?raw=true)
+
+
+
+
+
