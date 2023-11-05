@@ -24,6 +24,7 @@ Este repositorio contiene una serie de prácticas que he creado en Flutter para 
 - [Mini proyecto 02: Juego MEMORAMA ](#mini-proyecto-02-juego-memorama)
 - [Práctica 15: Sliver](#práctica-15)
 - [Práctica 16: Animated](#práctica-16)
+- [Práctica 17: Slidable](#práctica-17)
 
 
 
@@ -145,5 +146,12 @@ Es una aplicación donde se aprende a crear Animaciones
 
 
 [Enlace a la documentación completa de la Práctica 16](practica_16/README.md)
+
+## Práctica 17
+
+Es una aplicación donde se aprende a crear slidable y alert con snackbar
+
+
+[Enlace a la documentación completa de la Práctica 17](practica_17/README.md)
 
 
