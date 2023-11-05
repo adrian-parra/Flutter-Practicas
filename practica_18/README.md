@@ -1,16 +1,19 @@
-# practica_18
+# Practica 18
 
-A new Flutter project.
+## Aprendizaje
 
-## Getting Started
+`Table` es un widget que se utiliza para crear una cuadrícula bidimensional de celdas, donde puedes organizar y mostrar contenido de manera estructurada. Cada celda en una tabla puede contener cualquier widget, lo que te permite crear diseños complejos y personalizados.
 
-This project is a starting point for a Flutter application.
+`orientación: Portrait` en Flutter se refiere a la configuración de la pantalla de tu aplicación para que solo se pueda mostrar en modo vertical o de retrato. Esto significa que la pantalla de la aplicación no cambiará su orientación incluso si el dispositivo se gira físicamente a la orientación horizontal (paisaje).
 
-A few resources to get you started if this is your first Flutter project:
+## Resultado final de la practica
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+table_screen.dart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Pantalla 1](https://github.com/adrian-parra/Flutter-Practicas/blob/main/practica_18/assets/pagina1.png?raw=true)
+
+
+
+
+
+
