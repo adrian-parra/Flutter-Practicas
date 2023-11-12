@@ -26,6 +26,8 @@ Este repositorio contiene una serie de prácticas que he creado en Flutter para 
 - [Práctica 16: Animated](#práctica-16)
 - [Práctica 17: Slidable](#práctica-17)
 - [Práctica 18: Table,Orientación: Portrait](#práctica-18)
+- [Práctica 18: API - RICK AND MORTY](#práctica-19)
+
 
 
 
@@ -162,5 +164,12 @@ Es una aplicación donde se aprende a crear tablas y el manejo Orientación: Por
 
 
 [Enlace a la documentación completa de la Práctica 18](practica_18/README.md)
+
+## Práctica 19
+
+Es una aplicación donde se aprende a consumir la API de rick adn morty
+
+
+[Enlace a la documentación completa de la Práctica 19](practica_19/README.md)
 
 
