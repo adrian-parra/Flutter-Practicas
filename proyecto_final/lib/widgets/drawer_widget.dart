@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:proyecto_final/config.dart';
 import 'package:proyecto_final/screens/generar_qr_screen.dart';
 import 'package:proyecto_final/screens/profile_screen.dart';
+import 'package:proyecto_final/screens/qr_generado_screen.dart';
 
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({super.key});
@@ -100,13 +101,19 @@ class DrawerWidget extends StatelessWidget {
         //   ),
         // ),
         ListTile(
-          onTap: (){},
+          onTap: (){
+            Navigator.pop(context); // Cerrar el Drawer
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const QrGenerado()),
+            );
+          },
           leading: const Icon(
-            Icons.settings ,
+            Icons.qr_code_2_sharp ,
             color: AppConfig.colorExtra,
           ),
           title: const Text(
-            'Configuración',
+            'QR generado',
             style: TextStyle(
               color: AppConfig.colorDescripcion
             ),
