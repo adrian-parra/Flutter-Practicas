@@ -10,19 +10,16 @@ import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import 'package:intl/intl.dart';
 
 class GenerarQrScreen extends StatelessWidget {
-
   final TextEditingController motivo = TextEditingController();
 
   bool isError = false;
 
   String? selectedDate;
-  
 
   GenerarQrScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    
     final format = DateFormat("yyyy-MM-dd");
 
     return Scaffold(
@@ -31,132 +28,170 @@ class GenerarQrScreen extends StatelessWidget {
           title: const Text('Generar QR de acceso'),
           backgroundColor: AppConfig.colorPrincipal,
         ),
-        body: Container(
-          child: Card(
-            elevation: 4,
-            margin: const EdgeInsets.all(AppConfig.marginValue),
-            child: Container(
-              padding: const EdgeInsets.all(AppConfig.paddingValue),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // const Text(
-                  //   'Generar QR',
-                  //   style: TextStyle(
-                  //     fontSize: AppConfig.sizeTitulo,
-                  //     color: AppConfig.colorPrincipal,
-                  //     letterSpacing: AppConfig.letterSpacingValue,
-                  //   ),
-                  // ),
-                  // const SizedBox(height: (AppConfig.gap * 3)),
-                  const Text(
-                    'Ingrese motivo',
-                    style: TextStyle(
-                      fontSize: AppConfig.sizeDescripcion,
-                      color: AppConfig.colorDescripcion,
-                      letterSpacing: AppConfig.letterSpacingValue,
+        body: SingleChildScrollView(
+          child: Column(
+          children: [
+        Card(
+          elevation: 4,
+          margin: const EdgeInsets.all(AppConfig.marginValue),
+          child: Container(
+            padding: const EdgeInsets.all(AppConfig.paddingValue),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // const Text(
+                //   'Generar QR',
+                //   style: TextStyle(
+                //     fontSize: AppConfig.sizeTitulo,
+                //     color: AppConfig.colorPrincipal,
+                //     letterSpacing: AppConfig.letterSpacingValue,
+                //   ),
+                // ),
+                // const SizedBox(height: (AppConfig.gap * 3)),
+                const Text(
+                  'Ingrese motivo',
+                  style: TextStyle(
+                    fontSize: AppConfig.sizeDescripcion,
+                    color: AppConfig.colorDescripcion,
+                    letterSpacing: AppConfig.letterSpacingValue,
+                  ),
+                ),
+                const SizedBox(height: AppConfig.gap),
+                CustomTextField(
+                  labelText: 'Motivo',
+                  controller: motivo,
+                  hintText: 'Ingrese motivo',
+                  keyboardType: TextInputType.text,
+                ),
+                const SizedBox(height: AppConfig.gap),
+                const Text(
+                  'Seleccione fecha de uso',
+                  style: TextStyle(
+                    fontSize: AppConfig.sizeDescripcion,
+                    color: AppConfig.colorDescripcion,
+                    letterSpacing: AppConfig.letterSpacingValue,
+                  ),
+                ),
+                const SizedBox(height: AppConfig.gap),
+                DateTimeField(
+                  format: format,
+                  style: const TextStyle(
+                    fontSize: 14.0,
+                  ),
+                  decoration: const InputDecoration(
+                    contentPadding: EdgeInsets.symmetric(
+                        horizontal: AppConfig.paddingValue),
+                    hintStyle: TextStyle(
+                        color: AppConfig.colorDescripcion,
+                        fontSize: AppConfig.sizeDescripcion),
+                    labelText: 'Fecha',
+                    labelStyle: TextStyle(
+                        color: AppConfig.colorDescripcion,
+                        fontSize: AppConfig.sizeDescripcion),
+                    border: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: AppConfig.colorPrincipal),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: AppConfig.colorFondo),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(color: AppConfig.colorPrincipal),
                     ),
                   ),
-                  const SizedBox(height: AppConfig.gap),
-                  CustomTextField(
-                    labelText: 'Motivo',
-                    controller: motivo,
-                    hintText: 'Ingrese motivo',
-                    keyboardType: TextInputType.text,
-                  ),
-                  const SizedBox(height: AppConfig.gap),
-                  const Text(
-                    'Seleccione fecha de uso',
-                    style: TextStyle(
-                      fontSize: AppConfig.sizeDescripcion,
-                      color: AppConfig.colorDescripcion,
-                      letterSpacing: AppConfig.letterSpacingValue,
-                    ),
-                  ),
-                  const SizedBox(height: AppConfig.gap),
-                  DateTimeField(
-                    format: format,
-                    style: const TextStyle(
-                      fontSize: 14.0,
-                    ),
-                    decoration: const InputDecoration(
-                      contentPadding: EdgeInsets.symmetric(
-                          horizontal: AppConfig.paddingValue),
-                      hintStyle: TextStyle(
-                          color: AppConfig.colorDescripcion,
-                          fontSize: AppConfig.sizeDescripcion),
-                      labelText: 'Fecha',
-                      labelStyle: TextStyle(
-                          color: AppConfig.colorDescripcion,
-                          fontSize: AppConfig.sizeDescripcion),
-                      border: OutlineInputBorder(
-                        borderSide: BorderSide(color: AppConfig.colorPrincipal),
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: AppConfig.colorFondo),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: AppConfig.colorPrincipal),
-                      ),
-                    ),
-                    onShowPicker: (context, currentValue) async {
-                      final date = await showDatePicker(
-                        context: context,
-                        firstDate: DateTime(2000),
-                        initialDate: currentValue ?? DateTime.now(),
-                        lastDate: DateTime(2101),
-                      );
-                      if (date != null) {
-                        final formattedDate =
-                            date.toIso8601String().substring(0, 10);
+                  onShowPicker: (context, currentValue) async {
+                    final date = await showDatePicker(
+                      context: context,
+                      firstDate: DateTime(2000),
+                      initialDate: currentValue ?? DateTime.now(),
+                      lastDate: DateTime(2101),
+                    );
+                    if (date != null) {
+                      final formattedDate =
+                          date.toIso8601String().substring(0, 10);
 
-                        selectedDate = formattedDate;
-                      }
-                      return date;
-                    },
-                  ),
-                  const SizedBox(height: (AppConfig.gap * 2)),
-                  Row(
-                    children: [
-                      Expanded(
-                          child: CustomButton(
-                        onPressed: () async {
-                          // ? VALIDAR CAMPOS DEL FORM
-                          validarForm();
-                          if (isError) {
-                            isError = false;
-                            return;
-                          }
+                      selectedDate = formattedDate;
+                    }
+                    return date;
+                  },
+                ),
+                const SizedBox(height: (AppConfig.gap * 2)),
+                Row(
+                  children: [
+                    Expanded(
+                        child: CustomButton(
+                      onPressed: () async {
+                        // ? VALIDAR CAMPOS DEL FORM
+                        validarForm();
+                        if (isError) {
+                          isError = false;
+                          return;
+                        }
 
-                          // ? VALIDAR SI YA HA GENERADO EL QR
-                          if (await this
-                              .doesImagePathExistInSharedPreferences()) {
-                            Fluttertoast.showToast(
-                              msg: 'Ya ha generado un qr, solo puede generar uno por sesión',
-                              toastLength: Toast.LENGTH_SHORT,
-                              gravity: ToastGravity.BOTTOM,
-                              timeInSecForIosWeb: 12,
-                              backgroundColor: AppConfig.colorInfo,
-                              textColor: AppConfig.colorSecundario,
-                            );
-                            return;
-                          }
+                        // ? VALIDAR SI YA HA GENERADO EL QR
+                        if (await this
+                            .doesImagePathExistInSharedPreferences()) {
+                          Fluttertoast.showToast(
+                            msg:
+                                'Ya ha generado un qr, solo puede generar uno por sesión',
+                            toastLength: Toast.LENGTH_SHORT,
+                            gravity: ToastGravity.BOTTOM,
+                            timeInSecForIosWeb: 12,
+                            backgroundColor: AppConfig.colorInfo,
+                            textColor: AppConfig.colorSecundario,
+                          );
+                          return;
+                        }
 
-                          // ? GENERAR EL QR SI SI NO HAY PROBLEMAS EN FORMULARIO
-                          generarQrAcceso(
-                              motivo: motivo.text,
-                              fecha: selectedDate,
-                              context: context);
-                        },
-                        text: 'Generar',
-                      ))
-                    ],
-                  )
-                ],
-              ),
+                        // ? GENERAR EL QR SI SI NO HAY PROBLEMAS EN FORMULARIO
+                        generarQrAcceso(
+                            motivo: motivo.text,
+                            fecha: selectedDate,
+                            context: context);
+                      },
+                      text: 'Generar',
+                    ))
+                  ],
+                )
+              ],
             ),
           ),
+        ),
+        
+        Container(
+          padding: EdgeInsets.only(
+  top: 0,
+  left: AppConfig.paddingValue - 5,
+  right: AppConfig.paddingValue - 5,
+  bottom: AppConfig.paddingValue - 5,
+),
+
+          child:  Card(
+          elevation: 4,
+          child: Container(
+                 padding: const EdgeInsets.all(AppConfig.paddingValue),
+
+            child: Text(
+            '''¡Bienvenido! Aquí puedes generar tu código QR para acceder al estacionamiento.
+
+Recuerda que:
+- El código QR es único para cada sesión.
+- Solo es válido para un uso y hasta la fecha seleccionada.
+
+¡Asegúrate de utilizar el código antes de la fecha de vencimiento!''',
+            style: TextStyle(
+              fontSize:AppConfig.sizeDescripcion + 2, // Ajusta el tamaño de fuente según tus preferencias
+              color:AppConfig.colorInfo // Ajusta el color del texto según tus preferencias
+            ),
+          ),
+          )
+        ),
+        )
+        
+          ],
+        ),
         ));
   }
 
@@ -213,7 +248,7 @@ class GenerarQrScreen extends StatelessWidget {
             },
             errorBuilder:
                 (BuildContext context, Object error, StackTrace? stackTrace) {
-              return Icon(Icons.error);
+              return const Icon(Icons.error);
             },
           ),
           actions: [

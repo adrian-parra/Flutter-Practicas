@@ -139,15 +139,15 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     Expanded(
                         child: CustomButton(
-                      onPressed: () {
-                        setState(() async {
+                      onPressed: () async {
+
                           await SessionManager.guardarSesion(
                               nombre: '', cargo: '', uuid: '', rol: 'invitado');
 
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => HomeScreen(),
-                          ));
-                        });
+                          Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (context) => HomeScreen(),
+          ));
+
                       },
                       text: 'INVITADO',
                       color: AppConfig.colorSuccess,

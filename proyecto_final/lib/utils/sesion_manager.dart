@@ -8,6 +8,14 @@ class SessionManager {
   static const String KEY_UUID = 'uuid';
   static const String KEY_ROL = 'rol';
 
+  static String _rol = '';
+
+  static String get rol => _rol;
+
+  static set rol(String rol) {
+    _rol = rol;
+  }
+
   // Guardar información de sesión
   static Future<void> guardarSesion({required String nombre, required String cargo, required String uuid, required String rol}) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -15,7 +23,9 @@ class SessionManager {
     await prefs.setString(KEY_CARGO, cargo);
     await prefs.setString(KEY_UUID, cargo);
     await prefs.setString(KEY_ROL, rol);
-  }
+
+    SessionManager.rol = rol;
+  } 
 
   // Obtener información de sesión
   static Future<Map<String, String>> obtenerSesion() async {
@@ -35,6 +45,8 @@ class SessionManager {
     await prefs.remove(KEY_CARGO);
     await prefs.remove(KEY_UUID);
     await prefs.remove(KEY_ROL);
+
+    await prefs.remove('qrGenerado');
 
   }
 }

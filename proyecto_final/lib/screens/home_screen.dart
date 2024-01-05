@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto_final/config.dart';
+import 'package:proyecto_final/screens/login_screen.dart';
+import 'package:proyecto_final/utils/sesion_manager.dart';
 import 'package:proyecto_final/widgets/drawer_widget.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -19,8 +21,11 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           IconButton(
             icon: Icon(Icons.exit_to_app),
-            onPressed: () {
-              // Lógica al presionar el ícono de inicio de sesión
+            onPressed: () async{
+              await SessionManager.borrarSesion();
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (context) => LoginScreen(),
+          ));
             },
           ),
         ],
@@ -57,6 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           )),
       drawer: const Drawer(
+        backgroundColor: AppConfig.colorSecundario,
         child: DrawerWidget(),
       ),
     );
