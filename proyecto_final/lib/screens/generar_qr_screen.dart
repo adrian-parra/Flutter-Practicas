@@ -28,10 +28,10 @@ class GenerarQrScreen extends StatelessWidget {
     return Scaffold(
         backgroundColor: AppConfig.colorFondo,
         appBar: AppBar(
-          title: const Text('QR de acceso'),
+          title: const Text('Generar QR de acceso'),
           backgroundColor: AppConfig.colorPrincipal,
         ),
-        body: Center(
+        body: Container(
           child: Card(
             elevation: 4,
             margin: const EdgeInsets.all(AppConfig.marginValue),
@@ -41,15 +41,15 @@ class GenerarQrScreen extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'Generar QR',
-                    style: TextStyle(
-                      fontSize: AppConfig.sizeTitulo,
-                      color: AppConfig.colorPrincipal,
-                      letterSpacing: AppConfig.letterSpacingValue,
-                    ),
-                  ),
-                  const SizedBox(height: (AppConfig.gap * 3)),
+                  // const Text(
+                  //   'Generar QR',
+                  //   style: TextStyle(
+                  //     fontSize: AppConfig.sizeTitulo,
+                  //     color: AppConfig.colorPrincipal,
+                  //     letterSpacing: AppConfig.letterSpacingValue,
+                  //   ),
+                  // ),
+                  // const SizedBox(height: (AppConfig.gap * 3)),
                   const Text(
                     'Ingrese motivo',
                     style: TextStyle(

@@ -28,13 +28,19 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppConfig.colorFondo,
+      backgroundColor: AppConfig.colorSecundario,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset('assets/logo.png'),
+            Image.asset('assets/universidad.png'),
+            Text('LOAL SOFT',
+            style: TextStyle(
+              color: AppConfig.colorPrincipal,
+              fontSize: AppConfig.sizeSubtitulo
+              ),
+              ),
             const SizedBox(height: (AppConfig.gap * 2)),
             const CircularProgressIndicator(
               backgroundColor: AppConfig.colorFondo,

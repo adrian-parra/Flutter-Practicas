@@ -67,10 +67,11 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       backgroundColor: AppConfig.colorFondo,
       appBar: AppBar(
-        title: const Text('Identificarme'),
+        leading: Icon(Icons.person),
+        title: const Text('Iniciar sesión'),
         backgroundColor: AppConfig.colorPrincipal,
       ),
-      body: Center(
+      body: Container(
         child: Card(
           elevation: 4,
           margin: const EdgeInsets.all(AppConfig.marginValue),
@@ -80,15 +81,15 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'Iniciar sesión',
-                  style: TextStyle(
-                    fontSize: AppConfig.sizeTitulo,
-                    color: AppConfig.colorPrincipal,
-                    letterSpacing: AppConfig.letterSpacingValue,
-                  ),
-                ),
-                const SizedBox(height: (AppConfig.gap * 3)),
+                // const Text(
+                //   'Iniciar sesión',
+                //   style: TextStyle(
+                //     fontSize: AppConfig.sizeTitulo,
+                //     color: AppConfig.colorPrincipal,
+                //     letterSpacing: AppConfig.letterSpacingValue,
+                //   ),
+                // ),
+                // const SizedBox(height: (AppConfig.gap * 3)),
                 const Text(
                   'Ingrese nombre de usuario',
                   style: TextStyle(

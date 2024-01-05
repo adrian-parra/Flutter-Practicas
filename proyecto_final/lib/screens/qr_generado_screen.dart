@@ -15,8 +15,10 @@ class QrGenerado extends StatelessWidget {
         title: Text('Qr generado'),
         backgroundColor: AppConfig.colorPrincipal,
       ),
-      body: Center(
-        child: Card(
+      body: Container(
+        child: Align(
+          alignment: Alignment.center,
+          child:Card(
           elevation: 4,
           child: Container(
               padding: const EdgeInsets.all(AppConfig.paddingValue),
@@ -86,7 +88,9 @@ class QrGenerado extends StatelessWidget {
                   ),
                 ],
               )),
-        ),
+        ) ,
+        )
+        
       ),
     );
   }

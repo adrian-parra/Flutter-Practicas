@@ -80,7 +80,7 @@ class DrawerWidget extends StatelessWidget {
             color: AppConfig.colorExtra,
           ),
           title: const Text(
-            'QR de acceso',
+            'Generar QR',
             style: TextStyle(
               color: AppConfig.colorDescripcion
             ),
