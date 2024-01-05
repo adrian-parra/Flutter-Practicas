@@ -12,7 +12,7 @@ class QrGenerado extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppConfig.colorFondo,
       appBar: AppBar(
-        title: Text('Qr generado'),
+        title: Text('QR generado'),
         backgroundColor: AppConfig.colorPrincipal,
       ),
       body: Container(
@@ -75,7 +75,8 @@ class QrGenerado extends StatelessWidget {
                           );
                         } else {
                           return const Text('No hay QR generado, Genera uno ahora',style: TextStyle(
-                            color: AppConfig.colorInfo
+                            color: AppConfig.colorInfo,
+                            fontSize: AppConfig.sizeDescripcion + 2
                           ),);
                         }
                       } else {
