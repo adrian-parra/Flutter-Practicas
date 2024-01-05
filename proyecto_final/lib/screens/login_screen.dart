@@ -1,10 +1,15 @@
+import 'dart:convert';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:proyecto_final/screens/home_screen.dart';
+import 'package:proyecto_final/utils/sesion_manager.dart';
 import 'package:proyecto_final/widgets/custom_text_field_widget.dart';
 import 'package:proyecto_final/config.dart';
 import 'package:proyecto_final/widgets/custom_elevated_button_widget.dart';
+import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -14,53 +19,9 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final TextEditingController peso = TextEditingController();
-  final TextEditingController estatura = TextEditingController();
+  final TextEditingController user = TextEditingController();
+  final TextEditingController password = TextEditingController();
   bool isError = false;
-  double result = 0.0;
-  String category = '';
-  String imagenPath = '';
-  String messageText = '';
-
-  void calculateIMC() {
-    double weight = double.tryParse(peso.text) ?? 0.0;
-    double height = double.tryParse(estatura.text) ?? 0.0;
-
-    if (weight > 0 && height > 0) {
-      double imc = weight / (height * height);
-      result = imc;
-      String imcCategory = '';
-      if (imc < 18) {
-        imcCategory = 'Peso Bajo. Necesario valorar signos de desnutrición';
-        imagenPath = 'normal.png';
-        messageText = 'info';
-      } else if (imc >= 18 && imc <= 24.9) {
-        imcCategory = 'Normal';
-        imagenPath = 'normal.png';
-        messageText = 'success';
-      } else if (imc >= 25 && imc <= 26.9) {
-        imcCategory = 'Obesidad';
-        imagenPath = 'preobeso.png';
-        messageText = 'warning';
-      } else if (imc >= 27 && imc <= 29.9) {
-        imcCategory =
-            'Obesidad grado I. Riesgo relativo para desarrollar enfermedades cardiovasculares.';
-        imagenPath = 'obeso_tipo_1.png';
-        messageText = 'danger';
-      } else if (imc >= 30 && imc <= 39.9) {
-        imcCategory =
-            'Obesidad grado II. Riesgo relativo muy alto para el desarrollo de enfermedades cardiovasculares.';
-        imagenPath = 'obeso_tipo_2.png';
-        messageText = 'danger';
-      } else {
-        imcCategory =
-            'Obesidad grado III (Extrema o mórbida). Riesgo relativo extremadamente alto para el desarrollo de enfermedades cardiovasculares.';
-        imagenPath = 'obeso_tipo_3.png';
-        messageText = 'danger';
-      }
-      category = imcCategory;
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -101,9 +62,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 const SizedBox(height: AppConfig.gap),
                 CustomTextField(
                   labelText: 'Usuario',
-                  controller: peso,
+                  controller: user,
                   hintText: 'Ingrese usuario',
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.text,
                 ),
                 const SizedBox(height: AppConfig.gap),
                 const Text(
@@ -117,9 +78,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 const SizedBox(height: AppConfig.gap),
                 CustomTextField(
                   labelText: 'Contraseña',
-                  controller: estatura,
+                  controller: password,
                   hintText: 'Ingrese contraseña',
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.text,
                 ),
                 const SizedBox(height: (AppConfig.gap * 2)),
                 Row(
@@ -129,10 +90,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         text: 'Acceder',
                         onPressed: () {
                           setState(() {
-                            if (peso.text == '' || peso.text == null) {
+                            if (user.text == '' || user.text == null) {
                               isError = true;
                               Fluttertoast.showToast(
-                                msg: 'Ingrese su peso en kilogramos',
+                                msg: 'Ingrese su nombre de usuario',
                                 toastLength: Toast.LENGTH_SHORT,
                                 gravity: ToastGravity.BOTTOM,
                                 timeInSecForIosWeb: 5,
@@ -141,10 +102,10 @@ class _LoginScreenState extends State<LoginScreen> {
                               );
                             }
 
-                            if (estatura.text == '' || estatura.text == null) {
+                            if (password.text == '' || password.text == null) {
                               isError = true;
                               Fluttertoast.showToast(
-                                msg: 'Ingrese su estatura en metros',
+                                msg: 'Ingrese su password',
                                 toastLength: Toast.LENGTH_SHORT,
                                 gravity: ToastGravity.BOTTOM,
                                 timeInSecForIosWeb: 5,
@@ -158,8 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               return;
                             }
 
-                            // ? CALCULAR IMC
-                            calculateIMC();
+                            authUser(user: user.text, pass: password.text);
 
                             // Navigator.of(context).push(MaterialPageRoute(
                             //     builder: (context) => Resultado(
@@ -180,8 +140,13 @@ class _LoginScreenState extends State<LoginScreen> {
                     Expanded(
                         child: CustomButton(
                       onPressed: () {
-                        setState(() {
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomeScreen(),));
+                        setState(() async {
+                          await SessionManager.guardarSesion(
+                              nombre: '', cargo: '', uuid: '', rol: 'invitado');
+
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => HomeScreen(),
+                          ));
                         });
                       },
                       text: 'INVITADO',
@@ -195,5 +160,67 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ),
     );
+  }
+
+  void authUser({required String user, required String pass}) async {
+    try {
+      var response = await http.post(
+        Uri.parse('${AppConfig.apiUrl}persona/auth'),
+        headers: {'Content-Type': 'application/json'},
+        body: jsonEncode({
+          'user': user,
+          'pass': pass,
+        }),
+      );
+      if (response.statusCode == 200) {
+        // ? LIMPIAR FORMULARIO
+
+        Map<String, dynamic> responseData = jsonDecode(response.body);
+        String codeResponse = responseData['icon'];
+        String responseTitle = responseData['title'];
+
+        if (codeResponse == 'error') {
+          Fluttertoast.showToast(
+            msg: responseTitle,
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.BOTTOM,
+            timeInSecForIosWeb: 8,
+            backgroundColor: AppConfig.colorDanger,
+            textColor: AppConfig.colorSecundario,
+          );
+        } else {
+          Map<String, dynamic> UserModel = responseData['body'];
+          String userNombre = UserModel['nombre'];
+          String userCargo = UserModel['cargo'];
+          String userUuid = UserModel['uuid'];
+
+          await SessionManager.guardarSesion(
+              nombre: userNombre,
+              cargo: userCargo,
+              uuid: userUuid,
+              rol: 'usuario');
+
+          Navigator.of(context).pushReplacement(MaterialPageRoute(
+            builder: (context) => HomeScreen(),
+          ));
+
+          Fluttertoast.showToast(
+            msg: responseTitle,
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.BOTTOM,
+            timeInSecForIosWeb: 10,
+            backgroundColor: AppConfig.colorSuccess,
+            textColor: AppConfig.colorSecundario,
+          );
+        }
+
+        // print('model ' + UserModel['nombre']);
+        print('code ' + codeResponse);
+      } else {
+        print('Error: ${response.statusCode}');
+      }
+    } catch (e) {
+      print('Exception: $e');
+    }
   }
 }
