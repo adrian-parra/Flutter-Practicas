@@ -83,7 +83,7 @@ class DrawerWidget extends StatelessWidget {
               Navigator.pop(context); // Cerrar el Drawer
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const ProfileScreen()),
+                MaterialPageRoute(builder: (context) => ProfileScreen()),
               );
             },
             leading: const Icon(

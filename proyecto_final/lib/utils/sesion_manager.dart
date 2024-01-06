@@ -16,15 +16,24 @@ class SessionManager {
     _rol = rol;
   }
 
+  static String _uuid = '';
+
+  static String get uuid => _uuid;
+
+  static set uuid(String uuid){
+    _uuid = uuid;
+  }
+
   // Guardar información de sesión
   static Future<void> guardarSesion({required String nombre, required String cargo, required String uuid, required String rol}) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setString(KEY_NOMBRE, nombre);
     await prefs.setString(KEY_CARGO, cargo);
-    await prefs.setString(KEY_UUID, cargo);
+    await prefs.setString(KEY_UUID, uuid);
     await prefs.setString(KEY_ROL, rol);
 
     SessionManager.rol = rol;
+    SessionManager.uuid = uuid;
   } 
 
   // Obtener información de sesión

@@ -174,7 +174,7 @@ class GenerarQrScreen extends StatelessWidget {
                  padding: const EdgeInsets.all(AppConfig.paddingValue),
 
             child: Text(
-            '''¡Bienvenido! Aquí puedes generar tu código QR para acceder al estacionamiento.
+            '''Aquí puedes generar tu código QR para acceder al estacionamiento.
 
 Recuerda que:
 - El código QR es único para cada sesión.

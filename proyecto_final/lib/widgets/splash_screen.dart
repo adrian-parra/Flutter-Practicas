@@ -32,6 +32,12 @@ class _SplashScreenState extends State<SplashScreen> {
 
     // Comprobar si hay información de sesión
     if (sesion['rol']!.isNotEmpty) {
+      // ? ALMACENAR EN MEMORIA EL ROL Y EL UUID
+       String? rol = sesion['rol'];
+       String? uuid = sesion['uuid'];
+
+       SessionManager.rol = rol!;
+       SessionManager.uuid = uuid!;
       // Si hay información de sesión, redirigir a la pantalla de inicio
       Navigator.pushReplacement(
         context,

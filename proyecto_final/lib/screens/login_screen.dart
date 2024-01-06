@@ -32,8 +32,10 @@ class _LoginScreenState extends State<LoginScreen> {
         title: const Text('Iniciar sesión'),
         backgroundColor: AppConfig.colorPrincipal,
       ),
-      body: Container(
-        child: Card(
+      body: SingleChildScrollView(
+        child: Column(
+        children: [
+          Card(
           elevation: 4,
           margin: const EdgeInsets.all(AppConfig.marginValue),
           child: Container(
@@ -158,7 +160,31 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
         ),
+        Card(
+          elevation: 4,
+           margin: EdgeInsets.only(
+  top: 0,
+  left: AppConfig.paddingValue,
+  right: AppConfig.paddingValue,
+  bottom: AppConfig.paddingValue,),
+
+          child: Container(
+             padding: const EdgeInsets.all(AppConfig.paddingValue),
+            child: Text('Bienvenido al sistema. Por favor, inicia sesión para continuar. También puedes ingresar como invitado.'
+          ,
+            style: TextStyle(
+              fontSize:AppConfig.sizeDescripcion + 2, // Ajusta el tamaño de fuente según tus preferencias
+              color:AppConfig.colorInfo // Ajusta el color del texto según tus preferencias
+            ),),
+          )
+          
+          
+        )
+        ],
+         
       ),
+      )
+      
     );
   }
 
