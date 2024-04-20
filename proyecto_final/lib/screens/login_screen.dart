@@ -220,6 +220,17 @@ class _LoginScreenState extends State<LoginScreen> {
           String userCargo = UserModel['cargo'];
           String userUuid = UserModel['uuid'];
 
+
+          if( UserModel['QRAccesoEstacionamiento'] != null){
+             Map<String, dynamic> userQrModel = UserModel['QRAccesoEstacionamiento'];
+            //  String codeQr = userQrModel['codigoQR'];
+             String pathQr = userQrModel['rutaQr'];
+
+            SessionManager.guardarPathImageQrGenerado(pathQr);
+          }
+
+          
+
           await SessionManager.guardarSesion(
               nombre: userNombre,
               cargo: userCargo,
@@ -240,8 +251,8 @@ class _LoginScreenState extends State<LoginScreen> {
           );
         }
 
-        // print('model ' + UserModel['nombre']);
-        print('code ' + codeResponse);
+
+
       } else {
         print('Error: ${response.statusCode}');
       }

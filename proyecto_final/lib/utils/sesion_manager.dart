@@ -1,7 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
 import 'package:shared_preferences/shared_preferences.dart';
-
+import 'package:proyecto_final/utils/helper.dart';
 class SessionManager {
   static const String KEY_NOMBRE = 'nombre';
   static const String KEY_CARGO = 'cargo';
@@ -56,6 +56,16 @@ class SessionManager {
     await prefs.remove(KEY_ROL);
 
     await prefs.remove('qrGenerado');
+    await prefs.remove('codeQrGenerado');
 
+  }
+
+  static Future<void> guardarPathImageQrGenerado(imagePath) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.setString('qrGenerado', imagePath);
+
+    String codeQr = obtenerUUidDeCadena(imagePath);
+
+    prefs.setString('codeQrGenerado', codeQr);
   }
 }

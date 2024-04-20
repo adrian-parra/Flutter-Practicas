@@ -23,7 +23,7 @@ class AppConfig {
 
   static const letterSpacingValue = 1.3;
 
-  static const apiUrl = 'http://192.168.0.29:5220/api/';
-  static const apiHost = 'http://192.168.0.29:5220/';
+  static const apiUrl = 'http://localhost:5220/api/';
+  static const apiHost = 'http://localhost:5220/';
 
 }

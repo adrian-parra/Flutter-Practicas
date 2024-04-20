@@ -3,6 +3,10 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:proyecto_final/config.dart';
 import 'package:proyecto_final/screens/home_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:http/http.dart' as http;
+
+
+
 
 class QrGenerado extends StatelessWidget {
   const QrGenerado({super.key});
@@ -104,5 +108,16 @@ class QrGenerado extends StatelessWidget {
   Future<void> clearImagePathInSharedPreferences() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.remove('qrGenerado');
+
+    String? codeQr = await prefs.getString('codeQrGenerado');
+
+    print(';;; ${codeQr}');
+
+    var response = await http.delete(
+        Uri.parse('${AppConfig.apiUrl}qrAcceso/${codeQr}'),
+        headers: {'Content-Type': 'application/json'},
+  );
+
+
   }
 }
